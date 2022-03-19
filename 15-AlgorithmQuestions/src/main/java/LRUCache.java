@@ -10,6 +10,10 @@ public class LRUCache {
         DNode prev;
         DNode next;
 
+        public DNode() {
+        }
+
+
         public DNode(int key, int value) {
             this.key = key;
             this.value = value;
@@ -18,6 +22,7 @@ public class LRUCache {
 
     public LRUCache() {
     }
+
                                    // HasMap
                                    // int size
                                    // int capacity
@@ -62,7 +67,7 @@ public class LRUCache {
     }
 
           //  popTail
-          public DNode popTail(DNode node){
+          public DNode popTail(){
            DNode popped=tail.prev;
            removeNode(popped);
            return popped;
