@@ -18,7 +18,7 @@ public class ExprBalanceCheck {
             continue;
         }
         // At this point ch is a closing symbol
-        // Stack should'nt be empty.
+        // Stack shouldn't be empty.
             if(myStack.isEmpty()) return false;
             char match;
             switch (ch){

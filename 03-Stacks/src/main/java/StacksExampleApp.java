@@ -7,6 +7,9 @@ public class StacksExampleApp {
         System.out.println(myStack.pop());
         System.out.println(myStack.pop());
         System.out.println("Size of the stack is : " +myStack.size());
+        myStack.push('F');
+        myStack.push('D');
+        System.out.println("Size of the stack is : " +myStack.size());
 
     }
 }
