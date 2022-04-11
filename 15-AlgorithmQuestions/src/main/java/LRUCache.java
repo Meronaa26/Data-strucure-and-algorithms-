@@ -95,6 +95,9 @@ public class LRUCache {
                      size--;
                  }
 
+              }else{
+                  node.value=value;
+                  moveToHead(node);
               }
             }
 }
